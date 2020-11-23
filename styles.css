@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+}
+
+body{
+    background-image: url(/images/radio.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+.buttons{
+    display: flex;
+    margin-left: 42%;
+    margin-top: 30px;
+}
+
+h1{
+    display: flex;
+    color: rgb(183, 245, 132);
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 130px;
+    text-shadow: 2px 2px rgb(18, 90, 42);
+}
+
+h2{
+    display: flex;
+    color: rgb(183, 245, 132);
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: -13px;
+    text-shadow: 2px 2px rgb(18, 90, 42);
+}
+
+p{
+    display: flex;
+    color: rgb(183, 245, 132);
+    justify-content: center;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: -13px;
+    text-shadow: 2px 2px rgb(18, 90, 42);
+}
+
+.progressbar{
+    width: 200px;
+    height: 10px;
+    background-color:rgb(183, 245, 132);
+    
+}
+
+.timer{
+    display: flex;
+    color: rgb(183, 245, 132);
+    justify-content: space-evenly;
+    font-size: 20px;
+    margin-top: 10px;
+    text-shadow: 2px 2px rgb(18, 90, 42);
+}
+
+.progress{
+    width: 0;
+    height: 10px;
+    background-color:rgb(18, 90, 42);
+}
+
+.bar{
+    display: flex;
+    margin-left: 40%;
+    margin-top: 50px;
+}
+
+.volumebar{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 40%;
+}
+
+input[type=range] {
+    width: 30%;
+    margin: 10.8px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    background: rgb(183, 245, 132);;
+    border: 1.8px solid #510101;
+    border-radius: 17.2px;
+    width: 50%;
+    height: 8.4px;
+    cursor: pointer;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    margin-top: -12.6px;
+    width: 23px;
+    height: 30px;
+    background: rgb(18, 90, 42);
+    border: 2.3px solid #54cc00;
+    border-radius: 16px;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #77ff77;
+  }
+  input[type=range]::-moz-range-track {
+    background: #00ec00;
+    border: 1.8px solid #510101;
+    border-radius: 17.2px;
+    width: 50%;
+    height: 8.4px;
+    cursor: pointer;
+  }
+  input[type=range]::-moz-range-thumb {
+    width: 23px;
+    height: 30px;
+    background: rgba(26, 166, 136, 0.6);
+    border: 2.3px solid #54cc00;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 19.7px 0;
+    color: transparent;
+    width: 50%;
+    height: 8.4px;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #006200;
+    border: 1.8px solid #510101;
+    border-radius: 34.4px;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #00ec00;
+    border: 1.8px solid #510101;
+    border-radius: 34.4px;
+  }
+  input[type=range]::-ms-thumb {
+    width: 23px;
+    height: 30px;
+    background: rgba(26, 166, 136, 0.6);
+    border: 2.3px solid #54cc00;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-top: 0px;
+    /*Needed to keep the Edge thumb centred*/
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #00ec00;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #77ff77;
+  }
+  /*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+  how to remove the virtical space around the range input in IE*/
+  @supports (-ms-ime-align:auto) {
+    /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+    input[type=range] {
+      margin: 0;
+      /*Edge starts the margin from the thumb, not the track as other browsers do*/
+    }
+  }
+  
